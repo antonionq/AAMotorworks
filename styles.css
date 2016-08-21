@@ -296,14 +296,29 @@ body {
   }
 }*/
 
+.fb-wrap {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.fb-page {
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+#instafeed {
+  width: 90%;
+  height: 500px;
+  border: 1px solid blue;
+}
+
 
 /* --------------------------- ABOUT -----------------------*/
 
 #about-title {
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  /*font-family: 'Catamaran', sans-serif;*/
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   color: #333333;
   font-size: 28px;
 }
@@ -334,8 +349,8 @@ body {
 }
 
 .build-img {
+  max-width: 100%;
   height: 100%;
-  width: 100%;
   background-image: url('images/build.jpg');
   background-size: cover;
   background-position: center;
@@ -348,11 +363,29 @@ body {
   padding-top: 20px;
 }
 
+.build-content > h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.build-content > p {
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Hind', sans-serif;
+  letter-spacing: 0.4px;
+  text-indent: 50px;
+  /*font-weight: 300;*/
+  font-size: 14px;
+  word-spacing: 0px;
+  line-height: 22px;
+  color: #4A4A4A;
+}
+
 /* ---------------------------- CONTACT -------------------- */
 
 .angular-google-map-container {
   height: 350px;
-  width: 400px;
+  width: 100%;
 }
 
 /* ----------------------------------- */

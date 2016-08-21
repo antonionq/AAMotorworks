@@ -11,7 +11,7 @@ app.controller('contactCtrl', function($scope, $log, $timeout){
         latitude: 37.414735,
         longitude: -122.087118
       },
-      options: { draggable: true },
+      options: { backgroundColor: "black" },
       events: {
         dragend: function (marker, eventName, args) {
           $log.log('marker dragend');
@@ -29,5 +29,6 @@ app.controller('contactCtrl', function($scope, $log, $timeout){
         }
       }
     };
+
 
 });
