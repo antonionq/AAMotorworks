@@ -43,19 +43,28 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <!-- <li><div class="logo"></div></li> -->
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-
+            <li class="dropdown dropdown-fix">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#street">Street</a></li>
+                <li  role="separator" class="divider"></li>
+                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#track">Track</a></li>
+                <li role="separator" class="divider"></li>
+                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#diesel">Diesel</a></li>
+                <li role="separator" class="divider"></li>
+                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#offRoad">Off-Road</a></li>
+              </ul>
+            </li>
+            <li><a href="#services">Maintenance</a></li>
+            <li><a href="#custom">Custom Parts & Builds</a></li>
+            <li><a href="#about">About AA</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container">
 
-    </div>
+    <div class="container"></div>
 
     <ui-view></ui-view>
 
@@ -64,9 +73,6 @@
       <footer id="footer-custom">
         <p class="text-center">&copy; 2016 AA Motorworks, Inc.
       </footer>
-
-    </div><!-- /.container -->
-
 
     <!-- Bootstrap core JavaScript -->
 
