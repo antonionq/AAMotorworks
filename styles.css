@@ -19,6 +19,15 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+.navbar {
+  border-bottom: 0px;
+}
+
+.topLine {
+  height: 1px;
+  border-top: 1px solid #E7E7E7;
+}
+
 .container {
   margin-bottom: 10px;
 }
@@ -102,6 +111,18 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
+  display: inline-block;
+}
+
+.veteran-icon {
+  width: 90px;
+  height: 40px;
+  background-image: url("images/veteranLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  /*float: left;*/
 }
 
 .navbar-nav li {
@@ -136,10 +157,10 @@ body {
 .navbar-default .navbar-nav>.open>a:hover {
   background-color: #FFF;
 }
-#mainNav {
-  /*margin-top: 10px;*/
+
+/*#mainNav {
   border-top: 1px solid #E7E7E7;
-}
+}*/
 
 
 
@@ -149,7 +170,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: calc(100vh - 200px);
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -318,21 +339,158 @@ body {
   }
 }*/
 
+.homeContentWrap {
+  width: 100%;
+  heigth: 100%;
+  float: left;
+}
+
+.mainContent {
+  float: left;
+  /*width: calc(100% - 353px);*/
+  width: 100%;
+  /*height: 10%;*/
+}
+
+.boxesWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boxesLeft {
+  width: 33%;
+  height: 250px;
+  border-style: solid;
+  border-width: 10px 5px 10px 10px;
+  border-color: #FFF;
+  background-color: #3b3b3b;
+  position: relative;
+  background-image: url('images/home1.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.boxesMiddle {
+  width: 33%;
+  flex: 1;
+  height: 250px;
+  border-style: solid;
+  border-width: 10px 5px 10px 5px;
+  border-color: #FFF;
+  background-color: #3b3b3b;
+  position: relative;
+  background-image: url('images/home4.jpg');
+  background-size: cover;
+  background-position: 30% 80%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.boxesRight {
+  width: 33%;
+  height: 250px;
+  border-style: solid;
+  border-width: 10px 10px 10px 5px;
+  border-color: #FFF;
+  background-color: #3b3b3b;
+  position: relative;
+  background-image: url('images/home3.jpg');
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.boxesLeft:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+.boxesMiddle:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+.boxesRight:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.bottomLink {
+  /*position: absolute;*/
+  height: 33%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5em;
+}
+
+.content {
+  height: 800px;
+  width: 70%;
+}
+
+.container .marketing {
+  width: calc(100% - 340px);
+}
+
 .fb-wrap {
-  width: 80%;
-  margin: 0 auto;
-  border: 1px solid blue;
+  float: right;
+  border-style: solid;
+  border-width: 10px 10px 5px 10px;
+  border-color: #FFF;
 }
 
 .fb-page {
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
-#instafeed {
-  width: 90%;
-  height: 500px;
-  border: 1px solid blue;
+.snapOnImg {
+  width: 200px;
+  height: 200px;
+}
+
+.feature-home-wrap {
+  /*border: 1px solid green;*/
+  /*width: calc(100%-390px);*/
+}
+
+.feature-heading {
+  font-family: 'Helvetica', sans-serif;
+  /*font-weight: 600;*/
+  font-size: 1.5em;
+}
+
+.feature-img-wrap {
+  width: 200px;
+  height: 200px;
+  background-image: url("images/snapOn.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 10px 20px 20px 20px;
+}
+
+.feature-caption {
+  font-size: 1.1em;
+}
+
+@media (max-width: 1080px) {
+  .fb-wrap {
+    display: none;
+  }
 }
 
 
@@ -351,7 +509,7 @@ body {
 }
 
 .locationWrap {
-  height: 300px;
+  /*height: 300px;*/
   width: 100%;
   background-color: #2C3E50;
 }
@@ -359,28 +517,40 @@ body {
 .location {
   width: 50%;
   margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
   color: #FFF;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  font-size: 1.3em;
+  font-family: 'Source Sans Pro', sans-serif;
+  /*font-weight: 150;*/
 }
 
 .leftLoc {
   display: inline-block;
+  flex: 1;
+  height: 10;
+  /*text-align: right;
+  padding-right: 50px;*/
 }
 
 .middleLoc {
-  height: 90px;
+  height: 150px;
   width: 2px;
-  border: 1px solid gray;
+  /*border-right: 1px solid gray;*/
 }
 
 .rightLoc {
   display: inline-block;
+  flex: 1;
+  height: 100%;
+  /*text-align: left;
+  padding-left: 50px;*/
 }
 
 
@@ -449,4 +619,5 @@ body {
   background-color: #333333;
   padding: 50px;
   color: #FFF;
+  clear: both;
 }
