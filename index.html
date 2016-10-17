@@ -21,17 +21,15 @@
       <div class="container">
         <div class="top-bar">
           <div class="social-media-nav">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            <i class="fa fa-yelp" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/aa_motorworks/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/aamotorworks/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.yelp.com/biz/aa-motorworks-mountain-view"><i class="fa fa-yelp" aria-hidden="true"></i></a>
           </div>
           <div class="logo"></div>
-          <div class="social-media-nav">
             <div class="am-flag-wrap">
               <div class="am-flag"></div>
               <div class="veteran-icon"></div>
             </div>
-          </div>
         </div>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,11 +43,11 @@
           <ul class="nav navbar-nav">
             <li><a href="#home">Home</a></li>
             <li class="dropdown dropdown-fix">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" id="dlDropDown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Performance <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#street">Street</a></li>
+                <li data-toggle="collapse" data-target="nav-collapse" class="dropdown-toggle dropdown-fix"><a href="#street">Street</a></li>
                 <li  role="separator" class="divider"></li>
-                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#track">Track</a></li>
+                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-toggle dropdown-fix"><a href="#track">Track</a></li>
                 <li role="separator" class="divider"></li>
                 <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#diesel">Diesel</a></li>
                 <li role="separator" class="divider"></li>
@@ -73,7 +71,31 @@
       <!-- FOOTER -->
       <div class="footerTest">
         <footer id="footer-custom">
-          <p class="text-center">&copy; 2016 AA Motorworks, Inc.
+          <div class="footer-wrap">
+            <div class="left-foot">
+              <h3><span class="footer-title">Links</span></h3>
+              <a href="#home"><p class="left-footer-info">Home</p></a>
+              <a href="#about"><p class="left-footer-info">About the Shop</p></a>
+              <a href="#about"><p class="left-footer-info">Contact Us</p></a>
+              <a href="#about"><p class="left-footer-info">Location</p></a>
+              <a href="#services"><p class="footer-info">Services</p></a>
+            </div>
+            <div class="middle-foot">
+              <h3><span class="footer-title">Location</span></h3>
+              <p class="footer-info">1900 Old Middlefield Way<br>
+              Suite E<br>
+              Mountain View, CA 94043</p>
+            </div>
+            <div class="right-foot">
+              <h3><span class="footer-title">Contact</span></h3>
+              <p class="footer-info">
+                (650) 965-0990<br>
+                Adam@aamotorworks.com
+              </p>
+              <!-- <p class="right-footer-info">Mountain View CA 94043</p> -->
+            </div>
+          </div>
+          <p class="text-center">&copy; 2016 AA Motorworks, Inc.</p>
         </footer>
       </div>
 
@@ -92,6 +114,7 @@
     <script src='js/lodash/lodash.min.js'></script>
     <script src='js/angular-simple-logger/dist/index.js'></script>
     <script src='js/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
 
 
   </body>
