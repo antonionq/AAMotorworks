@@ -8,64 +8,105 @@
 
 
     <!-- Latest compiled and minified CSS -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans|Yantramanav|Catamaran|Montserrat|Raleway|Lato|Hind|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans|Yantramanav|Catamaran|Montserrat|Raleway|Lato|Hind|Open+Sans|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/track.css">
+    <link rel="stylesheet" href="styles/diesel.css">
+    <link rel="stylesheet" href="styles/street.css">
   </head>
 
   <body>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="top-bar">
-          <div class="social-media-nav">
-            <a href="https://www.instagram.com/aa_motorworks/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/aamotorworks/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://www.yelp.com/biz/aa-motorworks-mountain-view"><i class="fa fa-yelp" aria-hidden="true"></i></a>
-          </div>
-          <div class="logo"></div>
-            <div class="am-flag-wrap">
-              <div class="am-flag"></div>
-              <div class="veteran-icon"></div>
+    <div id="site-wrapper">
+
+      <div id="site-canvas">
+
+
+      <nav id="mainNav" class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="top-bar">
+            <div class="social-media-nav">
+              <a href="https://www.instagram.com/aa_motorworks/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/aamotorworks/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.yelp.com/biz/aa-motorworks-mountain-view"><i class="fa fa-yelp" aria-hidden="true"></i></a>
             </div>
+            <div class="logo"></div>
+              <div class="am-flag-wrap">
+                <div class="am-flag"></div>
+                <div class="veteran-icon"></div>
+              </div>
+          </div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#home">Home</a></li>
+              <li class="dropdown dropdown-fix">
+                <a href="#" class="dropdown-toggle" id="dlDropDown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Performance <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li data-toggle="collapse" data-target="nav-collapse" class="dropdown-toggle dropdown-fix"><a href="#street">Street</a></li>
+                  <li  role="separator" class="divider"></li>
+                  <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-toggle dropdown-fix"><a href="#track">Track</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#diesel">Diesel</a></li>
+                  <!-- <li role="separator" class="divider"></li> -->
+                  <!-- <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#offRoad">Off-Road</a></li> -->
+                </ul>
+              </li>
+              <li><a href="#services">Maintenance</a></li>
+              <li><a href="#custom">Custom Parts & Builds</a></li>
+              <li><a href="#about">About AA</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown dropdown-fix">
-              <a href="#" class="dropdown-toggle" id="dlDropDown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Performance <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li data-toggle="collapse" data-target="nav-collapse" class="dropdown-toggle dropdown-fix"><a href="#street">Street</a></li>
-                <li  role="separator" class="divider"></li>
-                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-toggle dropdown-fix"><a href="#track">Track</a></li>
-                <li role="separator" class="divider"></li>
-                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#diesel">Diesel</a></li>
-                <li role="separator" class="divider"></li>
-                <li data-toggle="collapse" data-target=".nav-collapse" class="dropdown-fix"><a href="#offRoad">Off-Road</a></li>
-              </ul>
-            </li>
-            <li><a href="#services">Maintenance</a></li>
-            <li><a href="#custom">Custom Parts & Builds</a></li>
-            <li><a href="#about">About AA</a></li>
-            <!-- <li><a href="#contact">Contact</a></li> -->
-          </ul>
+      </nav>
+
+      <div class="toggle-nav-wrap">
+        <a href="#" class="toggle-nav btn btn-lg" id="big-sexy"><i class="fa fa-bars"></i></a>
+        <div class="mobile-social-media-nav">
+          <a href="https://www.instagram.com/aa_motorworks/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/aamotorworks/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.yelp.com/biz/aa-motorworks-mountain-view"><i class="fa fa-yelp" aria-hidden="true"></i></a>
         </div>
       </div>
-    </nav>
+
+      <div class="mobile-top-bar">
+        <div class="mobile-logo-wrap">
+          <div class="logo"></div>
+        </div>
+      </div>
+
+    <div id="site-menu">
+      <ul>
+        <a class="toggle-nav" href="#home"><li>Home</li></a>
+        <a class="toggle-nav" href="#"><li>Performance</li></a>
+          <a class="toggle-nav" href="#street"><li><i class="fa fa-minus indent" aria-hidden="true"></i> Street</li></a>
+          <a class="toggle-nav" href="#track"><li><i class="fa fa-minus indent" aria-hidden="true"></i> Track</li></a>
+          <a class="toggle-nav" href="#diesel"><li><i class="fa fa-minus indent" aria-hidden="true"></i> Diesel</li></a>
+        <a class="toggle-nav" href="#services"><li>Maintenance</li></a>
+        <a class="toggle-nav" href="#custom"><li>Custom Parts & Builds</li></a>
+        <a class="toggle-nav" href="#about"><li>About AA</li></a>
+      </ul>
+    </div>
+
+      <ui-view autoscroll="true"></ui-view>
+
 
     <div class="container"></div>
-
-    <ui-view></ui-view>
 
 
       <!-- FOOTER -->
@@ -95,8 +136,18 @@
               <!-- <p class="right-footer-info">Mountain View CA 94043</p> -->
             </div>
           </div>
+          <div class="mobile-footer-social-media">
+            <a href="https://www.instagram.com/aa_motorworks/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/aamotorworks/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.yelp.com/biz/aa-motorworks-mountain-view"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+          </div>
           <p class="text-center">&copy; 2016 AA Motorworks, Inc.</p>
         </footer>
+      </div>
+
+      <!-- #site-canvas -->
+      </div>
+      <!-- #site-wrapper> -->
       </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -107,6 +158,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- NAV -->  <script src="js/power.js"></script>
+
+
 
     <script src="js/app.js"></script>
     <script src="js/mainCtrl.js"></script>

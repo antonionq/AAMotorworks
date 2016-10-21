@@ -1,0 +1,76 @@
+.custom-wrap {
+  width: 75%;
+  background-color: #1e1e1e;
+  margin: auto;
+}
+
+.custom-feature {
+  margin-bottom: 100px;
+  background-color: #262626;
+}
+
+.feature-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.feature-caption {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #FFF;
+  width: 95%;
+  margin: auto;
+  line-height: 25px;
+}
+
+.feature-caption>h4 {
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.dyno-numbers {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.red {
+  color: #c63939;
+  font-weight: bold;
+}
+
+.whp {
+  float: right;
+  margin-right: 10px;
+}
+
+.wtq {
+  float: right;
+}
+
+@media (max-width: 1080px) {
+  .custom-wrap {
+    width: 100%;
+  }
+
+  .custom-feature {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .dyno-numbers {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 500px) {
+  .custom-feature {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,58 @@
+.track-sub-heading {
+  font-size: .7em !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #FFF;
+  text-transform: none;
+  color: #727272;
+}
+
+.track-main-wrap {
+  width: 100%;
+  margin: auto;
+}
+
+.track-photos-wrap {
+  margin-top: 40px;
+  width: 70%;
+  margin: auto;
+}
+
+.track-photo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.track-photo:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+.fb-video-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fb-caption-wrap {
+
+}
+
+/*#fb-caption {
+  float: left;
+}*/
+
+.fb-video {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 880px) {
+
+  .track-photos-wrap {
+    width: 96%;
+  }
+}

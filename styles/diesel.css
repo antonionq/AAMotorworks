@@ -1,0 +1,26 @@
+.diesel-photo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.diesel-photo:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.fb-caption-wrap {
+  padding-right: 40px;
+}
+
+#fb-caption {
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .fb-caption-wrap {
+    padding-right: 0;
+  }
+}
