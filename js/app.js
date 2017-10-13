@@ -1,12 +1,6 @@
-var app = angular.module('aaM', ['ui.router', 'uiGmapgoogle-maps']);
+var app = angular.module('aaM', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $uiViewScrollProvider){
-
-	// app.run(function($rootScope) {
-	// 	$rootScope.$on('$stateChangeSuccess', function() {
-	// 		$document[0].body.scrollTop = $document[0].documentElement.scrollTop = 0;
-	// 	});
-	// });
 
 	$uiViewScrollProvider.useAnchorScroll();
 
@@ -29,8 +23,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $uiVi
 
     .state('about', {
       url: '/about',
-      templateUrl: '../templates/aboutView.html',
-			controller: 'contactCtrl'
+      templateUrl: '../templates/aboutView.html'
     })
 
 		.state('services', {
@@ -62,11 +55,4 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $uiVi
 			url: '/custom',
 			templateUrl: '../templates/customView.html'
 		})
-
-		$('ul.nav li.dropdown').hover(function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(20).fadeIn(300);
-		}, function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(20).fadeOut(300);
-		});
-
 });

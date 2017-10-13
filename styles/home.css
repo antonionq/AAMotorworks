@@ -12,11 +12,11 @@
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
+.carousel .carousel-item {
   height: calc(100vh - 170px);
   background-color: #777;
 }
-.carousel-inner > .item > img {
+.carousel-inner > .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@
   and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
   Inspired from:  http://codepen.io/Rowno/pen/Afykb
 */
-.carousel-fade .carousel-inner .item {
+.carousel-fade .carousel-inner .carousel-item {
   opacity: 0;
   transition-property: opacity;
 }
@@ -60,26 +60,26 @@
   z-index: 2;
 }
 
-/*
-  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
-  Need to override the 3.3 new styles for modern browsers & apply opacity
-*/
+button {
+  cursor: pointer;
+}
+
 @media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-fade .carousel-inner > .item.next,
-    .carousel-fade .carousel-inner > .item.active.right {
+    .carousel-fade .carousel-inner > .carousel-item.next,
+    .carousel-fade .carousel-inner > .carousel-item.active.right {
       opacity: 0;
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
     }
-    .carousel-fade .carousel-inner > .item.prev,
-    .carousel-fade .carousel-inner > .item.active.left {
+    .carousel-fade .carousel-inner > .carousel-item.prev,
+    .carousel-fade .carousel-inner > .carousel-item.active.left {
       opacity: 0;
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
     }
-    .carousel-fade .carousel-inner > .item.next.left,
-    .carousel-fade .carousel-inner > .item.prev.right,
-    .carousel-fade .carousel-inner > .item.active {
+    .carousel-fade .carousel-inner > .carousel-item.next.left,
+    .carousel-fade .carousel-inner > .carousel-item.prev.right,
+    .carousel-fade .carousel-inner > .carousel-item.active {
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
@@ -87,19 +87,22 @@
 }
 
 .carousel1 {
-  background-image: url('images/scott1.jpg');
+  background-image: url('images/track02.jpg');
   background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
 }
 .carousel2 {
-  background-image: url('images/scott2.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-image: url('images/track05.png');
+  background-size: 100% 100%;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
 }
 .carousel3 {
-  background-image: url('images/scott3.jpg');
+  background-image: url('images/track01.jpg');
   background-size: cover;
-  background-position: bottom;
-
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
 }
 
 
@@ -121,39 +124,6 @@
 }
 
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-
-/*@media (min-width: 768px) {
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}*/
-
-
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
@@ -166,6 +136,11 @@
   background-color: #1E1E1E;
   /*background-color: #e2493b;*/
   margin-bottom: 30px;
+}
+
+.get-started-content {
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 .get-started-content p {
@@ -193,7 +168,6 @@
   text-align: center;
   padding-bottom: 60px;
 }
-
 
 
 .homeContentWrap {
@@ -231,12 +205,9 @@
 
 .main-wrap-2 {
   background-color: #1e1e1e;
+  max-width: 1700px;
+  margin: 0 auto;
 }
-
-/*.content {
-  height: 800px;
-  width: 70%;
-}*/
 
 .content {
   /*height: auto;*/
@@ -267,15 +238,6 @@
   display: inline-block;
   margin-top: 35px;
   margin-bottom: 35px;
-}
-
-.first-content {
-  /*padding-top: 0px;*/
-}
-
-.last-content {
-  /*margin-bottom: 0px;*/
-  /*padding-bottom: 50px;*/
 }
 
 .content-left h4 {
@@ -422,4 +384,16 @@
     flex: auto !important;
   }
 
+}
+
+@media (max-width: 450px) {
+  .appointment-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content {
+    width: calc(100% - 20px);
+    margin: 10px 10px 10px 10px;
+  }
 }

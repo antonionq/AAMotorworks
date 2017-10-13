@@ -1,6 +1,8 @@
 .services-main-wrap {
   height: 100%;
   width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   background-color: #1e1e1e;
   margin-top: 30px;
 }
@@ -18,16 +20,14 @@
   float: left;
   margin-right: 40px;
   margin-top: 40px;
-  /*-webkit-box-shadow: 3px 3px 4px 0px #E8E8E8;
-  box-shadow: 2px 2px 2px 0px #E8E8E8;*/
 }
 
 .build-img {
   max-width: 100%;
   height: 100%;
-  background-image: url('images/build.jpg');
+  background-image: url('images/clint/motor6.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -109,7 +109,7 @@
   background-color: #262626;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: .9em;
   text-align: center;
   color: white;
   border-radius: 0;
@@ -133,6 +133,10 @@
   outline: 0;
 }
 
+.services-price {
+  padding-right: 20px;
+}
+
 @media (max-width: 1180px) {
   .service-box-wrap {
     padding-left: 50px;
@@ -148,6 +152,10 @@
   .service-box {
     padding: 40px 0px 40px 0px;
     min-width: 220px;
+  }
+
+  .feature-a {
+    padding: 0px 80px;
   }
 }
 
@@ -165,6 +173,10 @@
 
   .build-content {
     width: 100%;
+  }
+
+  .feature-a {
+    padding: 0px 0px;
   }
 }
 
@@ -193,4 +205,23 @@
     text-indent: 0;
   }
 
+  .custom-build-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .feature-c {
+    padding: 0px 5px !important;
+    padding-top: 20px !important;
+  }
+  
+  .feature-c h4, .feature-c p {
+    padding-left: 10px;
+  }
+}
+
+@media(max-width:500px) {
+  .feature-a {
+    margin: 35px 10px !important;
+  }
 }

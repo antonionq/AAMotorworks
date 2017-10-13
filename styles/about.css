@@ -1,27 +1,15 @@
 /* --------------------------- ABOUT -----------------------*/
 
-/*.about-heading-wrap {
-  border-top: 1px solid lightgray;
-  border-top: 1px solid lightgray;
-}*/
-
-.angular-google-map-container {
-  height: 350px;
-  width: 100%;
-}
-
 .about-wrap {
-  background-color: #1e1e1e;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .about-heading {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   color: #FFF;
-  font-size: 1.7em;
+  font-size: 20px;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 30px;
@@ -30,15 +18,53 @@
 
 .about-text {
   font-family: 'Open Sans', sans-serif;
-  line-height: 20px;
+  line-height: 24px;
   font-size: 1em;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 30px;
+  padding-top: 30px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
-  color: #9E9E9E;
+  /*color: #9E9E9E;*/
+  color: #FFF;
+}
+
+.about-adam-left {
+  color: #FFF;
+  width: 50%;
+}
+
+.about-adam-right {
+  color: #FFF;
+  width: 50%;
+}
+
+.about-adam-left h4 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-adam-right h4 {
+  padding-left: 50px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-adam-left p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+  font-size: 1em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
 }
 
 .about-adam-img {
@@ -46,63 +72,134 @@
   height: auto;
   padding-right: 50px;
   padding-left: 50px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
-.googleMaps {
-  /*margin-top: 50px;*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .locationWrap {
   width: 100%;
-  /*background-color: #3498DB;*/
-  background-color: #2980B9;
+  background-color: #c93b3b;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .location {
   width: 100%;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   text-align: center;
   color: #FFF;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  font-size: 1.3em;
-  font-family: 'Source Sans Pro', sans-serif;
-  /*font-weight: 150;*/
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.location-text {
+  padding-top: 50px;
 }
 
 .leftLoc {
-  text-align: left;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.middleLoc {
   text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  line-height: 24px;
 }
 
 .rightLoc {
   height: 100%;
-  text-align: right;
-  margin-right: 20px;
-  margin-left: 20px;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contact-heading-wrap {
-  margin-bottom: 10px;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 .main-heading {
-  font-size: 1.3em;
+  font-size: 1.7em;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+  .about-adam-img {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1900px) {
+  .about-adam-img-wrap {
+    text-align: center;
+  }
+  .about-adam-img {
+    width: 100%;
+  }
+  .about-text {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .location-text {
+    padding-top: 0;
+  }
+  .location-text p {
+    margin-bottom: 30px;
+  }
+  .about-adam-right h4 {
+    margin-top: 60px;
+  }
+  .minimal-margin {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .about-adam-img {
+    padding-left: 0;
+    padding-top: 30px;
+    /* width: 85%; */
+  }
+  .about-adam-left {
+    width: 80%;
+  }
+  .about-adam-right {
+    width: 80%;
+  }
+  .about-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 845px) {
@@ -124,6 +221,12 @@
   .rightLoc {
     text-align: center;
   }
+  .about-adam-left {
+    width: 100%;
+  }
+  .about-adam-right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -138,6 +241,14 @@
 
   .main-heading {
     font-size: 20px;
+  }
+
+  .about-adam-right h4 {
+    padding-left: 20px;
+  }
+
+  .about-adam-img {
+    width: 95%;
   }
 }
 
@@ -162,10 +273,17 @@
   .about-adam-img {
     padding-right: 10px;
     padding-left: 10px;
-    margin-bottom: 30px;
   }
 
   .about-wrap {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+
+  .location>div {
+    margin-bottom: 40px;
+  }
+
+  .location>div:last-child {
+    margin-bottom: 20px;
   }
 }

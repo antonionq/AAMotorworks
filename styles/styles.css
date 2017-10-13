@@ -32,8 +32,16 @@ body {
   background-color: #1e1e1e;
 }
 
+a:active, a:focus {
+    outline: none;
+}
+
+.modal-open {
+  padding-right: 0 !important;
+}
+
 .main-heading {
-  font-size: 1.3em;
+  font-size: 1.7em;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
@@ -202,11 +210,15 @@ body {
   float:none;
 }
 
-.top-bar {
+.navbar>.container, .navbar>.container-fluid {
+  display: block;
+}
+
+/* .top-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
 .social-media-nav {
   padding-top: 50px;
@@ -227,7 +239,7 @@ a .fa {
 }
 
 a .fa:hover {
-  color: black;
+  color: gray;
 }
 
 .logo {
@@ -282,6 +294,10 @@ a .fa:hover {
   color: #FFF !important;
 }
 
+.navbar-nav>li>a:hover {
+  color: #969696 !important;
+}
+
 .dropdown-fix {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -331,6 +347,8 @@ a .fa:hover {
   flex: 1;
   text-align: left;
   padding-left: 100px;
+  font-family: 'Work Sans', sans-serif;
+
 }
 
 .middle-foot {
@@ -387,8 +405,7 @@ a .fa:hover {
   position: absolute;
   top: 0;
   left: -300px;
-  background: #b73131;
-  /*padding: 15px;*/
+  background: #f7484e;
 }
 
 #site-wrapper.show-nav #site-canvas {
@@ -404,9 +421,17 @@ a .fa:hover {
   display: none;
 }
 
+.fa-bars:hover {
+  color: #969696 !important;
+}
+
 .mobile-logo-wrap {
   margin-top: -30px;
   margin-bottom: 20px;
+}
+
+.mobile-footer-social-media {
+  display: none;
 }
 
 .logo {
@@ -427,7 +452,7 @@ a .fa:hover {
 #site-menu>ul>a {
   text-decoration: none;
   color: white;
-  font-size: .9em;
+  font-size: 1em;
   text-transform: uppercase;
   font-family: 'Work Sans', sans-serif;
 }
@@ -484,9 +509,19 @@ a .fa:hover {
 
   .left-foot {
     padding-left: 20px;
+    flex: 1;
+    clear: both;
   }
   .right-foot {
     padding-right: 20px;
+    flex: 1;
+  }
+  .middle-foot {
+    flex: 1;
+  }
+
+  .footer-wrap {
+    display: block;
   }
 }
 
@@ -521,12 +556,17 @@ a .fa:hover {
   }
 
   .mobile-footer-social-media {
+    display: block;
     text-align: center !important;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
-  .mobile-footer-social-media>a>fa {
-    padding-left: 15px !important;
+  .mobile-footer-social-media>a>i:hover {
+    color: #969696 !important;
   }
 
+  .mobile-footer-social-media>a {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

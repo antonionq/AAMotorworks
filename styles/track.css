@@ -18,6 +18,7 @@
   margin-top: 40px;
   width: 70%;
   margin: auto;
+  text-align: center;
 }
 
 .track-photo {
@@ -31,23 +32,10 @@
   margin-bottom: 40px;
 }
 
-.fb-video-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.fb-caption-wrap {
-
-}
-
-/*#fb-caption {
-  float: left;
-}*/
-
-.fb-video {
-  margin-bottom: 40px;
+@media (min-width: 1900px) {
+  .track-photo {
+    width: 80%;
+  }
 }
 
 @media (max-width: 880px) {
