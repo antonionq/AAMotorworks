@@ -55,4 +55,5 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $uiVi
 			url: '/custom',
 			templateUrl: '../templates/customView.html'
 		})
+
 });
